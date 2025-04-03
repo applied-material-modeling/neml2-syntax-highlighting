@@ -1,0 +1,39 @@
+{
+  "name": "neml2-syntax-highlighting",
+  "author": "Gary (Tianchen) Hu",
+  "publisher": "GaryTianchenHu",
+  "displayName": "NEML2 Input File Syntax Highlighting",
+  "description": "Syntax highlighting for NEML2 input file",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/applied-material-modeling/neml2-syntax-highlighting.git"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Language Packs"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "neml2",
+        "aliases": [
+          "neml2"
+        ],
+        "extensions": [
+          ".nm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "neml2",
+        "scopeName": "input.neml2",
+        "path": "./syntaxes/neml2.tmLanguage.json"
+      }
+    ]
+  }
+}
