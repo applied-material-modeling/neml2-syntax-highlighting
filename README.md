@@ -26,6 +26,11 @@ None
 
 ## Release Notes
 
+### 0.0.2
+
+- Fix the scopes of some syntax groups
+- Decrease minimum compatible vscode engine version
+
 ### 0.0.1
 
 Initial release

@@ -57,6 +57,12 @@
       "patterns": [
         {
           "include": "#numbers"
+        },
+        {
+          "include": "#constants"
+        },
+        {
+          "include": "#substitutions"
         }
       ]
     },
@@ -70,10 +76,13 @@
       "end": "\n",
       "patterns": [
         {
+          "include": "#numbers"
+        },
+        {
           "include": "#constants"
         },
         {
-          "include": "#numbers"
+          "include": "#substitutions"
         },
         {
           "include": "#comments"
@@ -118,11 +127,27 @@
         }
       ]
     },
+    "substitutions": {
+      "patterns": [
+        {
+          "match": "\\$\\{([^\\{\\}]+)\\}",
+          "captures": {
+            "1": {
+              "name": "string.interpolated.neml2"
+            }
+          }
+        }
+      ]
+    },
     "constants": {
       "patterns": [
         {
           "match": "(?i)\\b(false|true)\\b",
           "name": "constant.language.neml2"
+        },
+        {
+          "match": "\\b[a-z_A-Z0-9]+(\/[a-z_A-Z0-9]+)+\\b",
+          "name": "variable.parameter.neml2"
         }
       ]
     },

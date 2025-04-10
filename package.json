@@ -4,13 +4,13 @@
   "publisher": "GaryTianchenHu",
   "displayName": "NEML2 Input File Syntax Highlighting",
   "description": "Syntax highlighting for NEML2 input file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/applied-material-modeling/neml2-syntax-highlighting.git"
   },
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Language Packs"
